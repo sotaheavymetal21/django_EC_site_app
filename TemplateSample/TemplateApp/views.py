@@ -11,7 +11,7 @@ def home(request):
     favorite_fruits = ["Apple", "Grape", "Lemon"]
     my_info = {
         "name": "Sota",
-        "age": 24
+        "age": 11
     }
     return render(request, "home.html", context={
         "my_name": my_name,
