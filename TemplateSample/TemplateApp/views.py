@@ -13,10 +13,12 @@ def home(request):
         "name": "Sota",
         "age": 11
     }
+    status = 10
     return render(request, "home.html", context={
         "my_name": my_name,
         "favorite_fruits": favorite_fruits,
-        "my_info": my_info
+        "my_info": my_info,
+        "status": status
     })
 
 def sample1(request):
@@ -36,7 +38,7 @@ def sample(request):
     favorite_fruits = [
         "Apple", "Grape", "Lemon"
     ]
-    msg = """hello
+    msg = """helflo
     my name is
     Tatsuya
     """
