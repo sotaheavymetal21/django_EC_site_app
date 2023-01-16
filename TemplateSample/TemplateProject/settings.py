@@ -15,6 +15,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+# どの環境でも使えるような記述
 TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 
 
@@ -57,6 +58,7 @@ ROOT_URLCONF = "TemplateProject.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
+        # TEMPLATESを表示するときにデフォルトでTEMPLATE_DIRを確認する
         "DIRS": [TEMPLATE_DIR],
         "APP_DIRS": True,
         "OPTIONS": {
