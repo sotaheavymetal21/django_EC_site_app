@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 def index(request):
     val = "Come on!"
-    return render(request, "index.html", context={"value": val})
+    return render(request, "TemplateApp/index.html", context={"value": val})
 
 
 def home(request, first_name, last_name):

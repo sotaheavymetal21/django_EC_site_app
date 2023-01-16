@@ -1,22 +1,22 @@
-{% load event_tags %} {#
+{% load event_tags %}
 <h1>Name: {{ my_name }}</h1>
-#} {#
 <h2>果物: {{ favorite_fruits.2 }}</h2>
-#} {#
 <h3>Age: {{ my_info.age }}</h3>
-#} {{ my_name }} {# for #}
+{{ my_name }}
+
 <ul>
   {% for fruit in favorite_fruits %}
   <li>{{ fruit }}</li>
   {% endfor %}
 </ul>
 
-{# if #} {% if "Grape" in favorite_fruits %}
+{% if "Grape" in favorite_fruits %}
 <p>Grapeありますよ</p>
 {% elif "Lemon" in favorite_fruits %}
 <p>Lemomありますね</p>
 {% else %}
-<p>Not Found</p>
+<p>どれも買えませんでした。。</p>
+
 {% endif %} {% if "age" in my_info %}
 <p>age in my_info</p>
 {% if my_info.age < 20 %}
