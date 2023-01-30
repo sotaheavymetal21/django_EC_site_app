@@ -2,6 +2,7 @@ from django import template
 
 register = template.Library()
 
+
 @register.filter(name="status_to_string")
 def convert_status_to_string(status, name):
     # print(f"name = { name } ")
@@ -15,4 +16,3 @@ def convert_status_to_string(status, name):
         return "Failed"
     else:
         return "Unknown Status"
-

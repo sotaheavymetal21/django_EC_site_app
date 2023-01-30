@@ -1,33 +1,28 @@
-{% load event_tags %}
-{# <h1>Name: {{ my_name }}</h1> #}
-{# <h2>果物: {{ favorite_fruits.2 }}</h2> #}
-{# <h3>Age: {{ my_info.age }}</h3> #}
-{{ my_name }}
-{# for #}
+{% load event_tags %} {#
+<h1>Name: {{ my_name }}</h1>
+#} {#
+<h2>果物: {{ favorite_fruits.2 }}</h2>
+#} {#
+<h3>Age: {{ my_info.age }}</h3>
+#} {{ my_name }} {# for #}
 <ul>
-{% for fruit in favorite_fruits %}
-    <li>{{ fruit}}</li>
-{% endfor %}
+  {% for fruit in favorite_fruits %}
+  <li>{{ fruit}}</li>
+  {% endfor %}
 </ul>
 
-{# if #}
-{% if "Grape" in favorite_fruits %}
-    <p>Grapeありますよ</p>
+{# if #} {% if "Grape" in favorite_fruits %}
+<p>Grapeありますよ</p>
 {% elif "Lemon" in favorite_fruits %}
-    <p>Lemomありますね</p>
+<p>Lemomありますね</p>
 {% else %}
-    <p>Not Found</p>
-{% endif %}
-
-{% if "age" in my_info %}
-    <p>age in my_info</p>
-        {% if my_info.age < 20 %}
-        <p>未成年ですね</p>
-        {% endif %}
-{% endif %}
-
-{% if my_info.name == "Sota" %}
-    <p>Sotaだよ</p>
+<p>Not Found</p>
+{% endif %} {% if "age" in my_info %}
+<p>age in my_info</p>
+{% if my_info.age < 20 %}
+<p>未成年ですね</p>
+{% endif %} {% endif %} {% if my_info.name == "Sota" %}
+<p>Sotaだよ</p>
 {% endif %}
 
 <p>{{ status | status_to_string:"AAA" }}</p>

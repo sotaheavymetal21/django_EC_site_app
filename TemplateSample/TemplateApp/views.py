@@ -11,7 +11,7 @@ def home(request, first_name, last_name):
     # my_name = "aa"
     favorite_fruits = ["Apple", "Grape", "Lemon"]
     my_info = {"name": "Sota", "age": 11}
-    status = 10
+    status = 30
     return render(
         request,
         "home.html",
