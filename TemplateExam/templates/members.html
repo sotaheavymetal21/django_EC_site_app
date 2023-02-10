@@ -1,0 +1,4 @@
+{% extends "base.html" %} {% block title %} キャラクター一覧{{ block.super }}{%
+endblock %} {% block content %} {% for member in members %}
+<p><a href="{% url "app:member" id=member.id %}"</p>
+{% endfor %} {% endblock %}

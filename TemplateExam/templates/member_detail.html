@@ -1,0 +1,7 @@
+{% extends "base.html" %} {% block title %} キャラクター詳細{{ block.super }}{%
+endblock %} {% block content %} {% load static %}
+<h1>キャラクター詳細画面</h1>
+<img src="{% static member.picutre_path %}" />
+<p>名前: {{ member.name }}</p>
+<p>参加日: {{ member.join_at }}</p>
+{% endfor %} {% endblock %}
