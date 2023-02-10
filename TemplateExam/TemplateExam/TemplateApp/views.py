@@ -12,10 +12,10 @@ class Member:
 
 
 member_list = [
-    Member(0, "King_Krull", "2020/04/01", "img/King_krull.jpeg"),
-    Member(1, "Enguarde", "2021/04/01", "img/Enguarde.jpeg"),
-    Member(2, "Very_Gnawty", "2022/05/01", "img/Very_Gnawty.jpeg"),
-    Member(3, "Squawks", "2019/06/01", "img/Squawks.jpeg"),
+    Member(0, "King_Krull", "2020/04/01", "img/king_krull.jpeg"),
+    Member(1, "Enguarde", "2021/04/01", "img/enguarde.jpeg"),
+    Member(2, "Very_Gnawty", "2022/05/01", "img/very_Gnawty.jpeg"),
+    Member(3, "Squawks", "2019/06/01", "img/squawks.jpeg"),
 ]
 # ホーム画面
 def home(request):

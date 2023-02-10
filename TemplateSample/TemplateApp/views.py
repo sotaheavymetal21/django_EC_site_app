@@ -59,6 +59,8 @@ def sample(request):
 
 
 class Country:
+    """インスタンスのプロパティをtemplateに渡して画面上に表示"""
+
     def __init__(self, name, population, capital):
         self.name = name
         self.population = population
