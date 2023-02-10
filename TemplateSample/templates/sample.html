@@ -1,3 +1,5 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static "home.css" %}"
 {# フィルター関数 #}
 <h1>{{ name | upper }}</h1>
 <h1>{{ page_url | urlize }}</h1>
@@ -14,3 +16,5 @@
 {% endfilter %}
 
 <a href = "{% url "template_app:home" first_name="Sota" last_name="Anegawa" %}">home</a>
+
+<img src="{% static "donkey_kong.jpeg" %}">
